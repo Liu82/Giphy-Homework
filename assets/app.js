@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var topics = [];
+  var topics = [];
   
     
 function displayshows() {
@@ -8,7 +8,7 @@ function displayshows() {
 var x = $(this).data("search");
 console.log(shows);
 
-var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + shows +"I9gW4xozEDVb0yHp4oVgPKPOLP8ajell";
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + shows + "I9gW4xozEDVb0yHp4oVgPKPOLP8ajell";
 
 xhr.done(function(data) { console.log("success got data", data); });
 console.log(queryURL);
@@ -45,7 +45,7 @@ $.ajax({
 
 $("#addShow").on("click", function(event) {
      event.preventDefault();
-     var newShow = $("#netflixInput").val().trim();
+     var newShow = $("#netflixInput").val();
      topics.push(newShow);
      console.log(topics);
      $("#showInput").val('');
