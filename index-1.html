@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+ 
+  <h1>Got Shows?</h1>
+  
+</div>
+
+<form class="form-inline" id="netflixSearch">
+  <div class="form-group">
+    <label for="showSearch">Search For A Show</label>
+    <input type="text" id="showSearch">
+  </div>
+  
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="Game of Thrones">Stranger Things</button>
+      <button class="btn btn-primary" id="show" data-search="">The Wire</button>
+  
+
+      <div id="myButtons"></div>
+    </div> 
+  </div>
+</div> 
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> 
+</div> 
+
+<script type="text/javascript" src="/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
