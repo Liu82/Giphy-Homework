@@ -1,4 +1,4 @@
-$(document).ready(function( {
+$(document).ready(function(){
 
 var topics = [];
   
@@ -6,9 +6,9 @@ var topics = [];
 function displayshows() {
 
 var x = $(this).data("search");
-console.log(x);
+console.log(shows);
 
-var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x +"I9gW4xozEDVb0yHp4oVgPKPOLP8ajell";
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + shows +"I9gW4xozEDVb0yHp4oVgPKPOLP8ajell";
 
 xhr.done(function(data) { console.log("success got data", data); });
 console.log(queryURL);
@@ -30,7 +30,7 @@ $.ajax({
        var p = $("<p>").text("Rating: " + rating);
 
        showImage.attr("src", staticSrc);
-       showImage.addClass("netflixGiphy");
+       showImage.addClass("showGiphy");
        showImage.attr("data-state", "still");
        showImage.attr("data-still", staticSrc);
        showImage.attr("data-animate", defaultAnimatedSrc);
@@ -48,7 +48,7 @@ $("#addShow").on("click", function(event) {
      var newShow = $("#netflixInput").val().trim();
      topics.push(newShow);
      console.log(topics);
-     $("#netflixInput").val('');
+     $("#showInput").val('');
      displayButtons();
    });
 
@@ -85,4 +85,5 @@ function pausePlayGifs() {
 }
 }
 
+});
 
