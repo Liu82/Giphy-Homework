@@ -30,7 +30,7 @@ label {
 	margin-bottom: 5px;
 }
 
-#netflixSearch {
+#showSearch {
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Carrois Gothic SC", sans-serif;
@@ -42,7 +42,7 @@ label {
 	flex-wrap: wrap;
 }
 
-.netflixGiphy {
+.showGiphy {
 	padding: 2px;
 	width: 80%;
 }
